@@ -1,0 +1,234 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body {
+    background-color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+header {
+    background: #AED6F1 ;
+    width: 100%;
+    text-align: center;
+    clear: both;
+    text-decoration: line-through;
+    content:'';
+    display: table;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.menu {
+    width: 1000px;
+    margin: 100 center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+img {
+    width: 300px;
+    height: 170px;
+    float: center;
+    padding: 12px;
+}
+nav {
+        float: right;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 150px;
+    padding: 12px 0;
+    float: left;
+    position: relative;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #613cbb;
+    font-weight: bold;
+}
+nav ul li a::before {
+    display: block;
+    content: '';
+    width: 0%;
+    background: black;
+    height: 5px;
+    top:0;
+    position: absolute;
+    transition: width 0.5s;
+}
+nav ul li a:hover::before {
+    width: 100%;
+}
+
+/*GALERIA*/
+
+.container{
+    margin: auto;
+    width: 1000px;
+    padding: 100px;
+    
+}
+p{
+    color: #613cbb;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    text-transform: none;
+
+
+}
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+ul.slider{
+    position: relative;
+    width: 800px;
+    height: 300px;
+}
+ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background: #AED6F1 ;
+}
+
+ul.slider li img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+ul.slider li:first-child {
+    opacity: 1; /*Mostramos el primer <li>*/
+}
+
+ul.slider li:target {
+    opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+.menu-galery{
+    text-align: center;
+    margin: 20px;
+}
+
+.menu-galery li{
+    display: inline-block;
+    text-align: center;
+}
+
+.menu-galery li a{
+    display: inline-block;
+    color: #AED6F1 ;
+    text-decoration: none;
+    background-color: #613cbb;
+    padding: 0px;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    border-radius: 100%;
+}
+.title{
+    text-decoration: dashed;
+    color: #613cbb;
+    text-align: center;
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+/*Ubicación*/
+.container-locations{
+    margin: auto;
+    width: 1000px;
+    padding: 90px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+ul.Maps{
+    position: relative;
+    width: 800px;
+    height: 300px;
+}
+ul.Maps li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background: #a6a6a6;
+}
+
+ul.Maps li iframe{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+ul.Maps li:first-child {
+    opacity: 2; /*Mostramos el primer <li>*/
+}
+
+ul.Maps li:target {
+    opacity: 2; /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+.maps-location{
+    text-align: center;
+    margin: 20px;
+}
+
+.maps-location li{
+    display: inline-block;
+    text-align: center;
+}
+
+.maps-location li a{
+    display: inline-block;
+    color: #AED6F1;
+    text-decoration: none;
+    background-color: #613cbb;
+    padding: 0px;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    border-radius: 100%;
+}
+.title{
+    text-decoration: dashed;
+    color: #613cbb;
+    text-align: center;
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+/*Conctact*/
+.contact{
+    padding: 0%;
+    text-align: left;
+    height: auto;
+    left:  auto;
+    position: left;
+    color: #613cbb;
+    margin: auto;
+    text-align: center;
+}
+.footer{
+    position: center;
+    background-color: #AED6F1 ;
+    line-height: normal;
+    display: block;
+    margin: auto;
+    text-align: center;
+    color: #613cbb;
+}
